@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      redirect_to new_contact_path, notice: 'contact was successfully submitted.'
+      redirect_to new_contact_path, notice: '音合わせを受け付けました。'
     else
       @contacts = Contact.all
       render :new

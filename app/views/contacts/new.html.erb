@@ -12,7 +12,7 @@
     </div>
   <% end %>
 
-  <h1>Contacts</h1>
+  <h1>お問い合わせ</h1>
 
   <div class="field">
     <%= form.label :name %>
@@ -30,16 +30,16 @@
   </div>
 
   <div class="action">
-    <%= form.submit "Submit" %>
+    <%= form.submit "送信する" %>
   </div>
 <% end %>
 
-<h2>Contacts List</h2>
+<h2>お問い合わせ一覧</h2>
 <table>
   <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Content</th>
+    <th>お名前</th>
+    <th>メールアドレス</th>
+    <th>お問い合わせ内容</th>
   </tr>
   <% @contacts.each do |contact| %>
     <tr>
