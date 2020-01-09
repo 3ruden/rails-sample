@@ -5,5 +5,5 @@ Rails.application.routes.draw do
       post :confirm
     end
   end
-  resources :contacts
+  resources :contacts, only: [:new, :create]
 end
