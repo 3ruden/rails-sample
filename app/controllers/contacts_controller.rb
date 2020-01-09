@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
   def new
     @contact = Contact.new
+    @contacts = Contact.all
   end
 
   def create
@@ -8,6 +9,7 @@ class ContactsController < ApplicationController
     if @contact.save
       redirect_to new_contact_path
     else
+      @contacts = Contact.all
       render :new
     end
   end
